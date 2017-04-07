@@ -1,0 +1,7 @@
+- hosts: webserver
+  remote_user: ec2-user
+  become: yes
+  gather_facts: no
+  tasks:
+    - name: copy_crl
+      copy: src=/home/ec2-user/test.txt dest=/root/test.txt mode=0644
