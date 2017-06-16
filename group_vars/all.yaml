@@ -1,0 +1,4 @@
+#
+# all.yml
+# 
+ssh_remote_user: ec2-user

@@ -1,0 +1,5 @@
+# This is update summary playbook
+# for update and healthcheck
+
+- include: update.yaml
+- include: health_check_ssh.yaml

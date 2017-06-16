@@ -1,0 +1,6 @@
+- name: upgrade all packages
+  notify: reboot
+  become: yes
+  yum:
+    name: '*'
+    state: latest

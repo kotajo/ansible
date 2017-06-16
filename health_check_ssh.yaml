@@ -1,0 +1,6 @@
+- name: health check for ssh
+  hosts: all
+  remote_user: "{{ ssh_remote_user }}"
+  gather_facts: no
+  roles:
+    - health_check_ssh
